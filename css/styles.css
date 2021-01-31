@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 90%;
+    height: 100%;
+    margin-top: 7em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    /* overflow: hidden; */ /*Solo deberia ver una imagen, las otras estan al costado, pero no se ven*/
+    box-shadow: 5px 10px 50px black;
+    border: 2px solid white;
+}
+
+.slider{
+    display: flex;
+    flex-direction: row;
+    width: 400%;
+    height: auto;
+  
+
+}
+
+    .sliderSection{
+        width: 100%;
+        
+    }
+
+    .sliderImg{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.botones{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    top: 50%;
+    font-size: 24px;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-family: monospace;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+    #derecha{
+        right: 0;
+
+    }
