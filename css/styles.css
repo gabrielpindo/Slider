@@ -8,28 +8,25 @@
 body{
     font-family: monospace;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    min-height: 100vh;
 }
 
 .container{
     width: 90%;
+    max-width: 900px;
     height: 100%;
-    margin-top: 7em;
-    margin-left: auto;
-    margin-right: auto;
+    overflow: hidden;
+    background-color: rgb(22, 32, 126);
+    margin: auto;
     position: relative;
-    /* overflow: hidden; */ /*Solo deberia ver una imagen, las otras estan al costado, pero no se ven*/
-    box-shadow: 5px 10px 50px black;
-    border: 2px solid white;
+    
+    border: 5px solid white;
 }
 
 .slider{
     display: flex;
-    flex-direction: row;
     width: 400%;
-    height: auto;
-  
+    height: 400px;
 
 }
 
@@ -47,22 +44,29 @@ body{
 
 .botones{
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 40px;
     height: 40px;
     background-color: white;
     top: 50%;
-    font-size: 24px;
-    transform: translateY(-50%);
+    transform: traslateY(-50%);
+    font-size: 30px;
     font-weight: bold;
-    font-family: monospace;
+    text-align: center;
     border-radius: 50%;
     cursor: pointer;
 }
 
-    #derecha{
-        right: 0;
+.botones:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    background-color: aliceblue;
+}
 
-    }
+#derecha{
+    right: 10px;
+}
+
+#izquierda{
+    left: 10px;
+}
+
